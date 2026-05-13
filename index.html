@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Schedule — Galactic Camp 2026</title>
+  <meta name="description" content="Full event schedule for Galactic Camp 2026 aboard the USS Hornet, May 29–31, 2026.">
+
+  <!-- Quantico (headings) via Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quantico:wght@400&display=swap" rel="stylesheet">
+
+  <!-- adelle-sans (body) via Adobe Fonts — replace kit ID before publishing -->
+  <link rel="stylesheet" href="https://use.typekit.net/XXXXXXX.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════
+       SITE HEADER — matches galacticcamp.com
+  ═══════════════════════════════════════════════ -->
+  <header class="site-header" id="site-header">
+    <div class="site-header__inner">
+
+      <a href="https://www.galacticcamp.com/" class="site-header__logo-link" aria-label="Galactic Camp home">
+        <img src="galactic-logo.png" alt="Galactic Camp" class="site-header__logo">
+      </a>
+
+      <button class="site-header__hamburger" id="hamburger-btn" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-header__nav" id="main-nav" aria-label="Site navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="https://www.galacticcamp.com/reg" class="nav-link">Register</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.galacticcamp.com/volunteer" class="nav-link">Volunteer</a>
+          </li>
+          <li class="nav-item">
+            <a href="https://www.galacticcamp.com/stateroom" class="nav-link">Stateroom Auction</a>
+          </li>
+          <li class="nav-item nav-item--folder">
+            <button class="nav-folder-btn" aria-expanded="false" aria-controls="nav-programming">
+              Programming
+              <svg class="nav-chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
+            </button>
+            <ul class="nav-folder" id="nav-programming">
+              <li><a href="https://www.galacticcamp.com/schedule">Schedule</a></li>
+              <li><a href="https://www.galacticcamp.com/awoo-friday-after-dark">After Dark Festival</a></li>
+              <li><a href="https://www.galacticcamp.com/panels">Panels, Events &amp; Adventures</a></li>
+              <li><a href="https://www.galacticcamp.com/dealers-den">Dealers Den</a></li>
+              <li><a href="https://www.galacticcamp.com/bars">Bars</a></li>
+              <li><a href="https://www.galacticcamp.com/2026-dj-lineup">DJ Submissions</a></li>
+            </ul>
+          </li>
+          <li class="nav-item nav-item--folder">
+            <button class="nav-folder-btn" aria-expanded="false" aria-controls="nav-information">
+              Information
+              <svg class="nav-chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4"/></svg>
+            </button>
+            <ul class="nav-folder" id="nav-information">
+              <li><a href="https://www.galacticcamp.com/hotels">Hotels</a></li>
+              <li><a href="https://www.galacticcamp.com/camping">Camp Aboard</a></li>
+              <li><a href="https://www.galacticcamp.com/schedule" aria-current="page" class="nav-folder__current">Schedule</a></li>
+              <li><a href="https://www.galacticcamp.com/donate">Donate</a></li>
+              <li><a href="https://www.galacticcamp.com/code-of-conduct">Code of Conduct</a></li>
+              <li><a href="https://www.galacticcamp.com/about">About the ORG</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- Mobile nav overlay backdrop -->
+  <div class="nav-backdrop" id="nav-backdrop" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════════════════
+       STICKY CONTROLS
+  ═══════════════════════════════════════════════ -->
+  <div class="sticky-controls" id="sticky-controls">
+
+    <!-- All Events / Favorites tab bar -->
+    <nav class="tab-bar" aria-label="Schedule view">
+      <button class="tab-btn tab-btn--active" id="tab-all" data-tab="all" aria-pressed="true">All Events</button>
+      <button class="tab-btn" id="tab-favorites" data-tab="favorites" aria-pressed="false">
+        <svg class="tab-heart" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 16.5S1.5 11 1.5 5.5A4.5 4.5 0 0 1 10 3.2 4.5 4.5 0 0 1 18.5 5.5C18.5 11 10 16.5 10 16.5z"/></svg>
+        <span class="tab-favorites__label">Favorites</span>
+      </button>
+    </nav>
+
+    <!-- Venue filter chips -->
+    <div class="venue-chips-wrap" role="group" aria-label="Filter by venue">
+      <div class="venue-chips" id="venue-chips">
+        <!-- Rendered by schedule.js -->
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       SCHEDULE
+  ═══════════════════════════════════════════════ -->
+  <main id="schedule" aria-label="Event schedule">
+    <div class="schedule-loading">Loading schedule…</div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════
+       FAVORITES NOTICE (one-time)
+  ═══════════════════════════════════════════════ -->
+  <div class="fav-notice" id="fav-notice" role="alert" hidden>
+    <p>Your favorites are saved on this device only. They won't carry over if you switch browsers or devices.</p>
+    <button class="fav-notice__dismiss" id="fav-notice-dismiss" aria-label="Dismiss">Got it</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       BABYFUR UNLOCK MODAL
+  ═══════════════════════════════════════════════ -->
+  <div class="modal-overlay" id="bf-modal" hidden aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-label="Enter code">
+      <button class="modal__close" id="bf-close" aria-label="Close">
+        <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg>
+      </button>
+      <div class="modal__body">
+        <label class="modal__label" for="bf-input">Enter code</label>
+        <div class="modal__row">
+          <input class="modal__input" type="password" id="bf-input" autocomplete="off" placeholder="••••••">
+          <button class="modal__submit" id="bf-submit">Unlock</button>
+        </div>
+        <p class="modal__error" id="bf-error" hidden>Incorrect code</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════
+       FOOTER — matches galacticcamp.com
+  ═══════════════════════════════════════════════ -->
+  <footer class="site-footer" id="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Galactic Camp</p>
+        <p>May 29–31, 2026<br>USS Hornet, San Francisco Bay</p>
+        <p>At-Con Help: <a href="tel:3277770267">327-777-CAMP</a></p>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Join the Crew</p>
+        <ul>
+          <li><a href="https://www.galacticcamp.com/reg">Register Now!</a></li>
+          <li><a href="https://www.galacticcamp.com/panels">Apply for Panel / DJ</a></li>
+          <li><a href="https://www.galacticcamp.com/dealers-den">Apply for Dealers' Den</a></li>
+          <li><a href="https://www.galacticcamp.com/volunteer">Apply for Staff</a></li>
+        </ul>
+      </div>
+      <div class="site-footer__col">
+        <p class="site-footer__heading">Contribute</p>
+        <p>Tax ID: 93-3276059</p>
+        <p><a href="https://www.galacticcamp.com/donate">Donate via Credit Card</a></p>
+        <p class="site-footer__small">Galactic Camp Corporation<br>584 Castro Street, Unit 2201<br>San Francisco, CA 94114</p>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p>This event is made possible by the Galactic Camp Corporation, a registered 501(c)3 non-profit, and the generous efforts of all our volunteers.</p>
+    </div>
+  </footer>
+
+  <script src="schedule-data.js"></script>
+  <script src="schedule.js"></script>
+</body>
+</html>
