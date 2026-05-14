@@ -654,8 +654,8 @@ function bindBabyfurUnlock() {
   // context menu and prevents pointercancel from firing, which is
   // the main reason the old pointer-event approach failed on mobile.
   header.addEventListener('touchstart', (e) => {
-    // Only block the hamburger button and nav folder buttons
-    if (e.target.closest('button')) return;
+    // Exclude links and buttons so taps navigate/toggle normally
+    if (e.target.closest('a, button')) return;
     e.preventDefault();
     startHold(e.touches[0].clientX, e.touches[0].clientY);
   }, { passive: false });
