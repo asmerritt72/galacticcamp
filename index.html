@@ -127,13 +127,17 @@
       <button class="modal__close" id="bf-close" aria-label="Close">
         <svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 1l12 12M13 1L1 13"/></svg>
       </button>
-      <div class="modal__body">
+      <div class="modal__body" id="bf-body">
         <label class="modal__label" for="bf-input">Enter code</label>
         <div class="modal__row">
           <input class="modal__input" type="password" id="bf-input" autocomplete="off" placeholder="••••••">
           <button class="modal__submit" id="bf-submit">Unlock</button>
         </div>
         <p class="modal__error" id="bf-error" hidden>Incorrect code</p>
+      </div>
+      <div class="modal__success" id="bf-success" hidden>
+        <p class="modal__success-msg">You're all set! Babyfur events are now visible on the schedule.</p>
+        <button class="modal__submit" id="bf-success-ok">Got it</button>
       </div>
     </div>
   </div>

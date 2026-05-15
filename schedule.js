@@ -600,11 +600,14 @@ function bindHeaderNav() {
 // ─────────────────────────────────────────────────────────────
 function bindBabyfurUnlock() {
   const header   = document.getElementById('site-header');
-  const modal    = document.getElementById('bf-modal');
-  const input    = document.getElementById('bf-input');
-  const submit   = document.getElementById('bf-submit');
-  const closeBtn = document.getElementById('bf-close');
-  const errorEl  = document.getElementById('bf-error');
+  const modal      = document.getElementById('bf-modal');
+  const body       = document.getElementById('bf-body');
+  const input      = document.getElementById('bf-input');
+  const submit     = document.getElementById('bf-submit');
+  const closeBtn   = document.getElementById('bf-close');
+  const errorEl    = document.getElementById('bf-error');
+  const successEl  = document.getElementById('bf-success');
+  const successOk  = document.getElementById('bf-success-ok');
 
   let pressTimer = null;
   let startX     = 0;
@@ -612,18 +615,22 @@ function bindBabyfurUnlock() {
   const HOLD_MS        = 2000;
   const MOVE_THRESHOLD = 100; // px — cancel if the finger drifts more than this
 
+  function showInputState() {
+    body.hidden     = false;
+    successEl.hidden = true;
+    input.value     = '';
+    errorEl.hidden  = true;
+  }
   function openModal() {
+    showInputState();
     modal.hidden = false;
     modal.setAttribute('aria-hidden', 'false');
-    input.value = '';
-    errorEl.hidden = true;
     setTimeout(() => input.focus(), 50);
   }
   function closeModal() {
     modal.hidden = true;
     modal.setAttribute('aria-hidden', 'true');
-    input.value = '';
-    errorEl.hidden = true;
+    showInputState();
   }
 
   function startHold(x, y) {
@@ -684,17 +691,22 @@ function bindBabyfurUnlock() {
   // ── Modal interactions ───────────────────────────────────────
   function attemptUnlock() {
     if (input.value.trim().toLowerCase() === BF_PASSPHRASE.toLowerCase()) {
-      document.cookie = 'gc_unlock_bf=1; path=/; SameSite=Lax';
+      // Persist for 30 days so the unlock survives browser restarts
+      document.cookie = 'gc_unlock_bf=1; path=/; SameSite=Lax; max-age=2592000';
       bfUnlocked = true;
-      closeModal();
       renderVenueChips();
       renderSchedule();
+      // Swap to success state inside the modal
+      body.hidden      = true;
+      successEl.hidden = false;
     } else {
       errorEl.hidden = false;
       input.value = '';
       input.focus();
     }
   }
+
+  successOk.addEventListener('click', closeModal);
 
   submit.addEventListener('click', attemptUnlock);
   input.addEventListener('keydown', e => { if (e.key === 'Enter') attemptUnlock(); });
