@@ -162,7 +162,7 @@ window.SCHEDULE_EVENTS = [
     displayDay: 'Friday',
     title: 'Femme BabyFur Meet-up and Socials',
     startISO: '2026-05-29T20:00:00-07:00',
-    endISO:   '2026-05-29T22:00:00-07:00',
+    endISO:   '2026-05-29T21:00:00-07:00',
     venue: 'Panel Room A',
     locationDetail: null,
     category: 'Meetup',
