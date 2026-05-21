@@ -1064,6 +1064,22 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'sun-006',
+    displayDay: 'Sunday',
+    title: 'How to Recover from Post-Con Blues',
+    startISO: '2026-05-31T11:00:00-07:00',
+    endISO:   '2026-05-31T12:00:00-07:00',
+    venue: 'Panel Room C',
+    category: 'Panel',
+    panelists: ['Cassie'],
+    description: "You've made a lot of new friends and gone to a lot of cool panels & parties. Or maybe this convention wasn't everything you hoped it would be. As the convention winds down, your brain can wind down too. Occasionally this can manifest in what's known as \"post-con blues\" or con drop.\n\nLearn how to manage these sudden feelings of malaise to better transition into every day life. Regardless of your Galactic Camp experience, take this time to wind down and focus on the fun memories you made.",
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'sun-007',
     displayDay: 'Sunday',
     title: 'Super Swap Meet',
