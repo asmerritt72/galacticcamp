@@ -642,6 +642,22 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'sat-022',
+    displayDay: 'Saturday',
+    title: 'Decentralized Defense and the Future of War',
+    startISO: '2026-05-30T18:00:00-07:00',
+    endISO:   '2026-05-30T20:00:00-07:00',
+    venue: 'Panel Room B',
+    category: 'Panel',
+    panelists: ['Diamond Dogs'],
+    description: 'Diamond Dogs founder teaches the blueprint for the future of deterrence. A mainstream audience version of the Diamond Dogs workshop.',
+    featured: false,
+    babyfur: false,
+    ageRestricted: '18+',
+    status: 'confirmed',
+  },
+
+  {
     id: 'sat-023',
     displayDay: 'Saturday',
     title: 'Chinese Language 101: 福瑞 (Fúruì)',
