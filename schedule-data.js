@@ -11,6 +11,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
 
   {
+    id: 'fri-dealers-den',
+    displayDay: 'Friday',
+    title: "Dealer's Den",
+    startISO: '2026-05-29T11:00:00-07:00',
+    endISO:   '2026-05-29T18:00:00-07:00',
+    venue: 'Other',
+    locationDetail: "Dealer's Den",
+    category: 'Dealers Den',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'fri-registration',
     displayDay: 'Friday',
     title: 'Registration',
@@ -362,6 +379,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
   // SATURDAY, May 30, 2026
   // ─────────────────────────────────────────────────────────────
+
+  {
+    id: 'sat-dealers-den',
+    displayDay: 'Saturday',
+    title: "Dealer's Den",
+    startISO: '2026-05-30T11:00:00-07:00',
+    endISO:   '2026-05-30T18:00:00-07:00',
+    venue: 'Other',
+    locationDetail: "Dealer's Den",
+    category: 'Dealers Den',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
 
   {
     id: 'sat-registration',
@@ -1098,6 +1132,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
   // SUNDAY, May 31, 2026
   // ─────────────────────────────────────────────────────────────
+
+  {
+    id: 'sun-dealers-den',
+    displayDay: 'Sunday',
+    title: "Dealer's Den",
+    startISO: '2026-05-31T11:00:00-07:00',
+    endISO:   '2026-05-31T13:30:00-07:00',
+    venue: 'Other',
+    locationDetail: "Dealer's Den",
+    category: 'Dealers Den',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
 
   {
     id: 'sun-registration',
