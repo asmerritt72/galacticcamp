@@ -11,6 +11,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
 
   {
+    id: 'fri-registration',
+    displayDay: 'Friday',
+    title: 'Registration',
+    startISO: '2026-05-29T08:00:00-07:00',
+    endISO:   '2026-05-29T22:00:00-07:00',
+    venue: 'Other',
+    locationDetail: null,
+    category: 'House Event',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'fri-003',
     displayDay: 'Friday',
     title: 'Trash Panda Trashy Karaoke',
@@ -276,6 +293,57 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'fri-021',
+    displayDay: 'Friday',
+    title: 'Neon Bunny',
+    startISO: '2026-05-29T21:00:00-07:00',
+    endISO:   '2026-05-29T22:30:00-07:00',
+    venue: 'Main Stage',
+    category: 'DJ',
+    genre: 'House / Tech House / Mainstream',
+    panelists: [],
+    description: 'You might know NeonBunny from other events such as Frolic, where he dj\'s just about every one. He\'s also dj\'d all over the SF Bay Area at a number of different events, including furry conventions, raves, street fairs, and more. His sound can range from deep dark tech house to more bubbly poppy house disco vibes.',
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
+    id: 'fri-022',
+    displayDay: 'Friday',
+    title: 'CK9',
+    startISO: '2026-05-29T22:30:00-07:00',
+    endISO:   '2026-05-30T00:00:00-07:00',
+    venue: 'Main Stage',
+    category: 'DJ',
+    genre: 'Dancefloor Drum & Bass',
+    panelists: [],
+    description: 'CK9 sets are a carefully calibrated mix of unhinged new takes on rave and pop classics, growling dirty bangers, and soaring moments of hug-your-friends catharsis. There\'s guaranteed to be a track you\'ll sing along to, a track you\'ll Shazam, and a track that\'ll get your paws further off the ground that you ever expected.',
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
+    id: 'fri-023',
+    displayDay: 'Friday',
+    title: 'Gaj3tt',
+    startISO: '2026-05-30T00:00:00-07:00',
+    endISO:   '2026-05-30T02:00:00-07:00',
+    venue: 'Main Stage',
+    category: 'DJ',
+    genre: 'Galactic Disco House',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'fri-inflatabar',
     displayDay: 'Friday',
     title: 'InflataBar',
@@ -294,6 +362,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
   // SATURDAY, May 30, 2026
   // ─────────────────────────────────────────────────────────────
+
+  {
+    id: 'sat-registration',
+    displayDay: 'Saturday',
+    title: 'Registration',
+    startISO: '2026-05-30T08:00:00-07:00',
+    endISO:   '2026-05-30T22:00:00-07:00',
+    venue: 'Other',
+    locationDetail: null,
+    category: 'House Event',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
 
   {
     id: 'sat-003',
@@ -382,9 +467,9 @@ window.SCHEDULE_EVENTS = [
     id: 'sat-005',
     displayDay: 'Saturday',
     title: 'From Turing to Toasters: Artificial Intelligence\'s Past, Present, and Future',
-    startISO: '2026-05-30T12:00:00-07:00',
-    endISO:   '2026-05-30T13:00:00-07:00',
-    venue: 'Panel Room B',
+    startISO: '2026-05-30T14:00:00-07:00',
+    endISO:   '2026-05-30T15:00:00-07:00',
+    venue: 'Panel Room A',
     category: 'Panel',
     panelists: ['Au Fay 翱非'],
     description: 'ChatGPT, DeepSeek, Gemini... You hear the names everywhere, but what is actually going on inside the black box? In this panel, we\'ll uncover the magic of AI. We\'ll explore how they work (at a high level — no math!), where they came from and where they are headed, and most importantly what they can (and can\'t) actually do. We\'ll also discuss the ethical and philosophical debates surrounding the technology. Join us for this intuitive introduction to the past, present, and future of Artificial Intelligence!',
@@ -645,7 +730,7 @@ window.SCHEDULE_EVENTS = [
     id: 'sat-022',
     displayDay: 'Saturday',
     title: 'Decentralized Defense and the Future of War',
-    startISO: '2026-05-30T18:00:00-07:00',
+    startISO: '2026-05-30T19:00:00-07:00',
     endISO:   '2026-05-30T20:00:00-07:00',
     venue: 'Panel Room B',
     category: 'Panel',
@@ -928,6 +1013,40 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'sat-039',
+    displayDay: 'Saturday',
+    title: 'Unleash Your Inner Animal - Meditation Workshop',
+    startISO: '2026-05-30T16:00:00-07:00',
+    endISO:   '2026-05-30T17:00:00-07:00',
+    venue: 'Other',
+    locationDetail: "Fo'c'sle (Front of Ship)",
+    category: 'Activity',
+    panelists: ['Cali Coyote', 'Dan'],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
+    id: 'sat-040',
+    displayDay: 'Saturday',
+    title: 'Pup Mosh',
+    startISO: '2026-05-30T17:00:00-07:00',
+    endISO:   '2026-05-30T20:00:00-07:00',
+    venue: 'Other',
+    locationDetail: "Fo'c'sle (Front of Ship)",
+    category: 'Meetup',
+    panelists: ['Cali Coyote', 'Dan'],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'sat-038',
     displayDay: 'Saturday',
     title: 'Plural Fur Meet and Greet!',
@@ -979,6 +1098,23 @@ window.SCHEDULE_EVENTS = [
   // ─────────────────────────────────────────────────────────────
   // SUNDAY, May 31, 2026
   // ─────────────────────────────────────────────────────────────
+
+  {
+    id: 'sun-registration',
+    displayDay: 'Sunday',
+    title: 'Registration',
+    startISO: '2026-05-31T08:00:00-07:00',
+    endISO:   '2026-05-31T12:00:00-07:00',
+    venue: 'Other',
+    locationDetail: null,
+    category: 'House Event',
+    panelists: [],
+    description: null,
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
 
   {
     id: 'sun-003',
