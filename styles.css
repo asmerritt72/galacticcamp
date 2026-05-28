@@ -272,8 +272,8 @@ img { display: block; max-width: 100%; }
 .guide-banner__link {
   color: var(--color-primary);
   font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   text-decoration: underline;
   text-underline-offset: 3px;
 }
