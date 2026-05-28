@@ -263,6 +263,21 @@ img { display: block; max-width: 100%; }
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
+/* ─── Pocket Guide Banner ─────────────────────────────────── */
+.guide-banner {
+  background: var(--color-dark);
+  padding: var(--space-sm) var(--space-md);
+  text-align: center;
+}
+.guide-banner__link {
+  color: var(--color-primary);
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 /* Tab bar */
 .tab-bar {
   display: flex;
