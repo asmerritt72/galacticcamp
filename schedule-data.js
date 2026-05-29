@@ -360,24 +360,6 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
-    id: 'fri-ship-tours',
-    displayDay: 'Friday',
-    title: 'Ship Tours',
-    startISO: '2026-05-29T10:00:00-07:00',
-    endISO:   '2026-05-29T17:00:00-07:00',
-    venue: 'Other',
-    locationDetail: null,
-    category: 'House Event',
-    panelists: [],
-    description: 'Sign up with Ship\'s store for a guided tour to all the behind the scene spots of the USS Hornet!',
-    featured: false,
-    babyfur: false,
-    ageRestricted: null,
-    status: 'confirmed',
-  },
-
-
-  {
     id: 'fri-con-history',
     displayDay: 'Friday',
     title: '90 Years of Conventions: From 1936 to Today',
