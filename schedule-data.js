@@ -752,7 +752,7 @@ window.SCHEDULE_EVENTS = [
     venue: 'Panel Room B',
     category: 'Panel',
     panelists: ['Diamond Dogs'],
-    description: 'Diamond Dogs founder teaches the blueprint for the future of deterrence. A mainstream audience version of the Diamond Dogs workshop.',
+    description: 'Diamond Dogs Group trains operators in the future of multi-domain warfare.\nThis is the founding story — why a West Point dropout, UC Berkeley graduate, and Yu-Gi-Oh world champion started a defense tech company in Silicon Valley\nWhat he actually thinks about AI, defense, personal sovereignty, and the cognitive warfare nobody wants to talk about honestly.\nNo NDAs. No PR filter. Drone bombs, combat medicine, edge AI, and why the most dangerous weapon is the one that decides what you\'re allowed to think.\nPotentially a giveaway of combat medic training for attendees (supplies limited)',
     featured: false,
     babyfur: false,
     ageRestricted: '18+',
