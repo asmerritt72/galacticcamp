@@ -1081,6 +1081,22 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'sat-pascal-zuta',
+    displayDay: 'Saturday',
+    title: 'Pascal Zuta',
+    startISO: '2026-05-30T15:30:00-07:00',
+    endISO:   '2026-05-30T16:30:00-07:00',
+    venue: 'Fantail',
+    category: 'Other',
+    panelists: [],
+    description: 'Accoustic classics from a live guitarist for your afternoon delight',
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'sat-fantail-afternoon',
     displayDay: 'Saturday',
     title: 'Fantail Bar',
