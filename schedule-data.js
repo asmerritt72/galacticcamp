@@ -1085,7 +1085,7 @@ window.SCHEDULE_EVENTS = [
     displayDay: 'Saturday',
     title: 'Pascal Zuta',
     startISO: '2026-05-30T15:30:00-07:00',
-    endISO:   '2026-05-30T16:45:00-07:00',
+    endISO:   '2026-05-30T17:00:00-07:00',
     venue: 'Fantail',
     category: 'Other',
     panelists: [],
