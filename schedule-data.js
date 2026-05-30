@@ -1081,6 +1081,22 @@ window.SCHEDULE_EVENTS = [
   },
 
   {
+    id: 'sat-fantail-afternoon',
+    displayDay: 'Saturday',
+    title: 'Fantail Bar',
+    startISO: '2026-05-30T15:00:00-07:00',
+    endISO:   '2026-05-30T18:00:00-07:00',
+    venue: 'Fantail',
+    category: 'Bar',
+    panelists: [],
+    description: 'The fantail bar is open! Serving mimosas and other afternoon delights!',
+    featured: false,
+    babyfur: false,
+    ageRestricted: null,
+    status: 'confirmed',
+  },
+
+  {
     id: 'sat-fantail-bar',
     displayDay: 'Saturday',
     title: 'Fantail Bar',
