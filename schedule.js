@@ -95,9 +95,6 @@ function getFilteredEvents() {
     // Never show placeholder events (already excluded from data, safety check)
     if (evt.status === 'placeholder') return false;
 
-    // Never show past events
-    if (new Date(evt.endISO) < now) return false;
-
     // Hide babyfur events unless unlocked
     if (evt.babyfur && !bfUnlocked) return false;
 
@@ -202,7 +199,7 @@ function renderSchedule() {
   if (events.length === 0) {
     container.innerHTML = activeTab === 'favorites'
       ? '<p class="schedule-empty">No favorites yet — tap the ♡ on any event to save it here.</p>'
-      : '<p class="schedule-empty">No upcoming events to show.</p>';
+      : '<p class="schedule-empty">No events to show.</p>';
     return;
   }
 
